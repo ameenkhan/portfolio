@@ -10,12 +10,12 @@ function Card({ children }) {
 }
 
 export default function Home() {
-  const [label, setLabel] = useState('Show');
-  const name = "Ameen";
+  const [isVisible, setIsVisible] = useState(true);
   const handleClick = (e) => {
-    setLabel(label == 'Show' ? 'Hide' : 'Show');
+    setIsVisible(!isVisible);
   }
 
+  const name = "Ameen";
   return (
     <>
       <div className="p-20 space-y-10">
@@ -29,7 +29,9 @@ export default function Home() {
         <Card />
         <Card />
 
-        <button onClick={handleClick}>{label}</button>
+        <button onClick={handleClick}>
+          {isVisible ? 'Hide' : 'Show'}
+        </button>
       </div>
     </>
   );
