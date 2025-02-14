@@ -15,19 +15,23 @@ export default function Home() {
     setIsVisible(!isVisible);
   }
 
+  const cards = isVisible && (
+    <>
+      <Card>This is being passed</Card>
+      <Card>
+        <div>This is JS!</div>
+        <Card>Nested Text!</Card>
+      </Card>
+    </>
+  );
+
   const name = "Ameen";
   return (
     <>
       <div className="p-20 space-y-10">
         <div>Hello, {name}</div>
-        <Card>This is being passed</Card>
-        <Card>
-          <div>This is JS!</div>
-          <Card>Nested text!</Card>
-        </Card>
-        <Card />
-        <Card />
-        <Card />
+
+        {cards}
 
         <button onClick={handleClick}>
           {isVisible ? 'Hide' : 'Show'}
