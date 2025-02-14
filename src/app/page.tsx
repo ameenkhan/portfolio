@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Card from './components/card';
+import Card from '@/app/components/card';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
