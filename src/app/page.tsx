@@ -1,13 +1,6 @@
 'use client';
 import { useState } from 'react';
-
-function Card({ children }) {
-  return (
-    <div className="border rounded-md border-grau-600 p-4">
-      {children}
-    </div>
-  )
-}
+import Card from './card';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
