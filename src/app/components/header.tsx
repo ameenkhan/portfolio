@@ -1,13 +1,14 @@
 import Counter from "@/app/components/counter";
+import Link from "next/link";
 
 export default function Header() {
     return (
         <>
             <header className="p-20 border border-yellow-400">
                 <ul className="flex space-x-4">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/about/projects">Projects</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/about">About</Link></li>
+                    <li><Link href="/about/projects">Projects</Link></li>
                 </ul>
                 <Counter></Counter>
             </header>
