@@ -7,11 +7,13 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
   const [names, setNames] = useState(['Ameen', 'John', 'Doe']);
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    console.log(e);
     setIsVisible(!isVisible);
   }
 
-  const handleAdd = (e) => {
+  const handleAdd = (e: React.MouseEvent<HTMLButtonElement>) => {
+    console.log(e);
     setNames([...names, 'New element!']);
   }
 
