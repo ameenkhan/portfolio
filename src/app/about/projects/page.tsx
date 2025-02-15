@@ -1,5 +1,5 @@
 // don't use cache for this component
-// export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';s
 
 export default async function AboutProjectsPage() {
     // no cache
