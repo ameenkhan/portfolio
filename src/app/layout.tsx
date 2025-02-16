@@ -23,6 +23,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // throw new Error("oops");
   return (
     <html lang="en">
       <body
