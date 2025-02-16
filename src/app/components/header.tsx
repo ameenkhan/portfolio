@@ -1,16 +1,19 @@
-import Counter from "@/app/components/counter";
+import Navigation from "@/app/components/navigation";
 import Link from "next/link";
 
 export default function Header() {
     return (
         <>
-            <header className="p-20 border border-yellow-400">
-                <ul className="flex space-x-4">
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/about/projects">Projects</Link></li>
-                </ul>
-                <Counter></Counter>
+            <header className="flex justify-between md:items-center mt-4">
+                <div className="flex items-center md:space-x-12">
+                    <div className="hidden md:block">
+                        <Link href="/" className="text-xl">Ameen Khan</Link>
+                    </div>
+                    <Navigation />
+                </div>
+                <div>
+                    Dark Mode
+                </div>
             </header>
         </>
     );

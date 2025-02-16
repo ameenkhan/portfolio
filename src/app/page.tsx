@@ -22,7 +22,7 @@ export default function Home() {
   const name = "Ameen";
   return (
     <>
-      <div className="p-20 space-y-10">
+      <div className="space-y-10">
         <div>Hello, {name}</div>
 
         {cards}
