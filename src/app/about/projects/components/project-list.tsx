@@ -15,7 +15,8 @@ export default async function ProjectList() {
     //     { cache: "no-store" }
     // );
 
-    const response = await fetch('http://localhost:3001/repos');
+    const response = await fetch('http://localhost:3`001/repos');
+    throw new Error('oops');
 
     // ttl in cache
     // const response = await fetch('http://localhost:3001/repos', { next: { revalidate: 3 } });
