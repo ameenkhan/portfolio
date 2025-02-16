@@ -5,7 +5,6 @@ interface AboutLayoutProps {
 }
 
 export default function AboutLayout({ children }: AboutLayoutProps) {
-  // throw new Error('oops');
   return (
     <>
       <div>
