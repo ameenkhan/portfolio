@@ -1,3 +1,12 @@
-export default function BlogPage({ params }) {
-  return (<>Hello! {params.slug}</>)
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const slug = (await params).slug;
+  return (
+    <>
+      Hello! {slug}
+    </>
+  )
 }
