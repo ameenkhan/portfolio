@@ -15,11 +15,11 @@ export default async function AboutProjectsPage() {
         <div className="mb-8">
           This is the list of my repos
         </div>
-        {/* <ErrorBoundary fallback={<div>bugging out, error</div>}> */}
-        <Suspense fallback=<ProjectListLoading />>
-          <ProjectList />
-        </Suspense>
-        {/* </ErrorBoundary> */}
+        <ErrorBoundary fallback={<div>bugging out, error</div>}>
+          <Suspense fallback=<ProjectListLoading />>
+            <ProjectList />
+          </Suspense>
+        </ErrorBoundary>
       </div>
     </>
   )
