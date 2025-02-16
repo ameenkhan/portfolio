@@ -22,7 +22,7 @@ export default function Home({ searchParams }) {
   const name = "Ameen";
 
   console.log(searchParams);
-  if (searchParams.error) throw new Error('oops');;
+  if (searchParams.error) throw new Error('oops');
 
   return (
     <>
