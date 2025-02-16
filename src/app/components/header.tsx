@@ -1,17 +1,11 @@
-import Counter from "@/app/components/counter";
-import Link from "next/link";
+import Navigation from "@/app/components/navigation";
 
 export default function Header() {
     return (
         <>
             <header>
-                <ul className="flex space-x-4">
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/about/projects">Projects</Link></li>
-                </ul>
-                <Counter></Counter>
-            </header >
+                <Navigation />
+            </header>
         </>
     );
 }
