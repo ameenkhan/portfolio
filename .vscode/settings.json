@@ -2,5 +2,7 @@
   "css.lint.unknownAtRules": "ignore",
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 1.8,
+  :
 }
