@@ -1,5 +1,7 @@
 export default function AboutPage() {
-  // throw new Error('oops');
+  if (Math.random() > 0.5) {
+    throw new Error('oops');
+  }
   return (
     <>
       About me!
