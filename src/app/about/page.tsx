@@ -1,7 +1,8 @@
 export default function AboutPage() {
-    return (
-        <>
-            About me!
-        </>
-    )
+  throw new Error('oops');
+  return (
+    <>
+      About me!
+    </>
+  )
 }
