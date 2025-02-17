@@ -5,10 +5,10 @@ const titles = {
   'second': 'Hello Second!'
 }
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }, parent) {
   const description = (await parent).description ?? 'Default desc'
   return {
-    title: titles[params.slug],
+    title: params.slug,
     description
   }
 }
