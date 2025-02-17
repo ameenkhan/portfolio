@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/header";
+
+const robotoFont = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin']
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +28,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // throw new Error("oops");
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={robotoFont.className}
       >
         <Header />
         <main className="mt-12">
