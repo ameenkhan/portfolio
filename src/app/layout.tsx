@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/header";
+import Chatbot from "@/app/components/chatbot";
 
 const robotoFont = Roboto({
   weight: ['400', '700'],
@@ -38,6 +39,7 @@ export default function RootLayout({
           {children}
         </main>
 
+        <Chatbot />
       </body>
     </html>
   );
