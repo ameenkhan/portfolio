@@ -3,6 +3,10 @@ import { Suspense } from "react";
 import ProjectListLoading from "./components/project-list-loading";
 import { ErrorBoundary } from "react-error-boundary";
 
+export const metadata = {
+  title: 'Projects'
+}
+
 export default async function AboutProjectsPage() {
 
 
